@@ -89,7 +89,7 @@ def teacher_dashboard():
     
 
 
-   
+
 
 def teacher_tab_take_attendance():
     teacher_id = st.session_state.teacher_data['teacher_id']
@@ -337,6 +337,7 @@ def teacher_screen_login():
 
 
 
+
 def register_teacher(teacher_username, teacher_name, teacher_pass, teacher_pass_confirm):
     if not teacher_username or not teacher_name or not teacher_pass:
         return False, "All Fields are required!"
@@ -397,4 +398,3 @@ def teacher_screen_register():
     with btnc2:
         if st.button('Login Instead', type="primary", icon=':material/passkey:', width='stretch'):
             st.session_state.teacher_login_type = 'login'
-
